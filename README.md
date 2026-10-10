@@ -79,7 +79,7 @@ Account: `sensorpro_add_sub_organization`, `sensorpro_add_update_user`.
   "mcpServers": {
     "sensorpro": {
       "command": "npx",
-      "args": ["-y", "github:OWNER/REPO#v0.1.0"],
+      "args": ["-y", "github:sensorpro/cursor#v0.1.0"],
       "env": {
         "SENSORPRO_API_KEY": "${SENSORPRO_API_KEY}",
         "SENSORPRO_ORG": "${SENSORPRO_ORG}",

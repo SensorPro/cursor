@@ -6,7 +6,7 @@ MCP server (stdio) for the [SensorPro](https://sensorpro.eu) email marketing RES
 
 ```sh
 # from GitHub, without npm publishing
-npx -y github:OWNER/REPO#v0.1.0
+npx -y github:sensorpro/cursor#v0.1.0
 
 # from a checkout
 node server/dist/sensorpro-mcp.js

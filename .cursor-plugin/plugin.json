@@ -8,7 +8,7 @@
   },
   "publisher": "SensorPro",
   "homepage": "https://sensorpro.eu",
-  "repository": "https://github.com/OWNER/REPO",
+  "repository": "https://github.com/sensorpro/cursor",
   "license": "MIT",
   "logo": "assets/logo.png",
   "keywords": [

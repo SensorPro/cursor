@@ -6,7 +6,7 @@
   "homepage": "https://sensorpro.eu",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OWNER/REPO.git",
+    "url": "git+https://github.com/sensorpro/cursor.git",
     "directory": "server"
   },
   "license": "MIT",
