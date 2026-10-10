@@ -1,0 +1,64 @@
+{
+  "name": "sensorpro",
+  "displayName": "SensorPro",
+  "version": "0.1.0",
+  "description": "Work with SensorPro, the EU email marketing platform: look up and update contacts, find your most engaged subscribers, build campaigns with your own HTML designs and segments, send approved test and live broadcasts, and report on campaign results.",
+  "author": {
+    "name": "SensorPro"
+  },
+  "publisher": "SensorPro",
+  "homepage": "https://sensorpro.eu",
+  "repository": "https://github.com/OWNER/REPO",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "sensorpro",
+    "email",
+    "email-marketing",
+    "newsletter",
+    "campaigns",
+    "contacts",
+    "gdpr",
+    "eu",
+    "mcp"
+  ],
+  "category": "integrations",
+  "tags": [
+    "sensorpro",
+    "email",
+    "marketing",
+    "mcp"
+  ],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "SENSORPRO_API_KEY": {
+        "type": "string",
+        "title": "SensorPro API key",
+        "description": "Secret. In SensorPro open API > API keys and copy the key named \"Sensorpro rest API default key\". If the key has an IP whitelist, the machine running the MCP server must be on it."
+      },
+      "SENSORPRO_ORG": {
+        "type": "string",
+        "title": "SensorPro organization",
+        "description": "Your SensorPro organization name, exactly as you enter it on the SensorPro sign-in page."
+      },
+      "SENSORPRO_USER": {
+        "type": "string",
+        "title": "SensorPro API user",
+        "description": "Username of a SensorPro API user. API users are separate from normal SensorPro login users, and a normal login cannot use the API. Ask your SensorPro admin or support@sensorpro.net for an API user if you do not have one."
+      },
+      "SENSORPRO_PASSWORD": {
+        "type": "string",
+        "title": "SensorPro API user password",
+        "description": "Secret. Password of the API user above. SensorPro locks the account after 3 failed sign-ins, so double-check it before saving."
+      }
+    },
+    "required": [
+      "SENSORPRO_API_KEY",
+      "SENSORPRO_ORG",
+      "SENSORPRO_USER",
+      "SENSORPRO_PASSWORD"
+    ]
+  },
+  "mcpServers": "./mcp.json"
+}

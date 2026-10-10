@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "sensorpro": {
+      "command": "npx",
+      "args": ["-y", "github:OWNER/REPO#v0.1.0"],
+      "env": {
+        "SENSORPRO_API_KEY": "${SENSORPRO_API_KEY}",
+        "SENSORPRO_ORG": "${SENSORPRO_ORG}",
+        "SENSORPRO_USER": "${SENSORPRO_USER}",
+        "SENSORPRO_PASSWORD": "${SENSORPRO_PASSWORD}"
+      }
+    }
+  }
+}

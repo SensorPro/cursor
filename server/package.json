@@ -1,0 +1,39 @@
+{
+  "name": "sensorpro-mcp",
+  "version": "0.1.0",
+  "description": "MCP server (stdio) for the SensorPro email marketing REST API: contacts, campaigns, segments, designs, broadcasts, relay email and imports.",
+  "keywords": ["sensorpro", "mcp", "model-context-protocol", "email-marketing", "cursor"],
+  "homepage": "https://sensorpro.eu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/REPO.git",
+    "directory": "server"
+  },
+  "license": "MIT",
+  "author": "SensorPro",
+  "type": "module",
+  "main": "dist/sensorpro-mcp.js",
+  "bin": {
+    "sensorpro-mcp": "dist/sensorpro-mcp.js"
+  },
+  "files": [
+    "dist/sensorpro-mcp.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --platform=node --format=esm --target=node18 --outfile=dist/sensorpro-mcp.js --legal-comments=eof --banner:js=\"import { createRequire as __spCreateRequire } from 'node:module'; const require = __spCreateRequire(import.meta.url);\"",
+    "start": "node dist/sensorpro-mcp.js",
+    "dev": "node src/index.js",
+    "test": "node test/stdio-test.mjs && node test/fake-server-test.mjs ok && node test/fake-server-test.mjs badcreds && node test/fake-server-test.mjs ip",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "esbuild": "^0.25.0",
+    "zod": "^4.6.5"
+  }
+}

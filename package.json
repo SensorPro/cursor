@@ -1,0 +1,27 @@
+{
+  "name": "sensorpro-cursor-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SensorPro plugin for Cursor. This root package only exists so the bundled MCP server can run with `npx -y github:OWNER/REPO`. The publishable npm package lives in server/.",
+  "homepage": "https://sensorpro.eu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/REPO.git"
+  },
+  "license": "MIT",
+  "author": "SensorPro",
+  "type": "module",
+  "bin": {
+    "sensorpro-mcp": "server/dist/sensorpro-mcp.js"
+  },
+  "files": [
+    "server/dist/sensorpro-mcp.js"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "test": "npm --prefix server test && node scripts/validate.mjs"
+  }
+}
