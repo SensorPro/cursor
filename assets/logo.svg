@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="80 80 240 240" width="240" height="240" role="img" aria-label="SensorPro">
+  <rect x="80" y="80" width="240" height="240" rx="40" fill="#fff"/>
   <title>SensorPro</title>
   <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
     <path d="M115 175 L182 116 Q200 101 218 116 L285 175 Q292 181 292 190 L292 283 Q292 295 280 295 L120 295 Q108 295 108 283 L108 190 Q108 181 115 175 Z"/>
